@@ -36,17 +36,17 @@ with st.sidebar:
         st.write('Grab your token from [your Civitai account](https://civitai.com/user/account)')
         api_token = st.text_input('API Token (Required)', type='password')
         model = st.selectbox('Model Selection', model_list.keys(), index=0)
-        prompt = st.text_area('Prompt (Required)', placeholder='A cat')
-        negative_prompt = st.text_area('Negative Prompt (Optional)', placeholder='A dog')
         scheduler = st.selectbox(
             'Scheduler', ['EulerA', 'DPM2MKarras', 'DPMSDEKarras', 'Heun'], index=0)
+        prompt = st.text_area('Prompt (Required)', placeholder='A cat')
+        negative_prompt = st.text_area('Negative Prompt (Optional)', placeholder='A dog')
         steps = st.slider('Steps', min_value=1, max_value=100, value=25)
-        cfg_scale = st.slider('CFG Scale', min_value=1, max_value=15, value=10)
+        cfg_scale = st.slider('CFG Scale', min_value=1, max_value=15, value=7)
         width = st.number_input('Width', min_value=1,
                                 max_value=1024, value=512)
         height = st.number_input(
             'Height', min_value=1, max_value=1024, value=512)
-        seed = st.number_input('Seed', value=-1)
+        seed = st.number_input('Seed (-1 for random)', value=-1)
         submit_button = st.form_submit_button('Generate')
 
 # Main content
@@ -75,7 +75,7 @@ if submit_button:
         if res:
             if 'jobs' in res and res['jobs'][0].get('result'):
                 st.image(res['jobs'][0]['result']['blobUrl'],
-                            caption='Generated Image', use_column_width=True)
+                            caption='Generated Image')
                 st.toast('Task completed!', icon = "✅")
             else:
                 st.error('Failed to retrieve the generated image.')       
