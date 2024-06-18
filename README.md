@@ -1,6 +1,6 @@
 # Streamlit Image Generation App
 
-This project is an image generation application built using Streamlit and the [civitai-python](https://github.com/civitai/civitai-python) SDK.
+This project is an image generation application built using Streamlit and the Civitai Python SDK.
 
 [View Online Demo](https://pickup100-python-civitai-image-generator.streamlit.app)
 
@@ -8,7 +8,7 @@ This project is an image generation application built using Streamlit and the [c
 
 <img src="https://i.imgur.com/VTtjRvJ.png" width="70%" />
 
-This application leverages the power of Streamlit for the web interface and the civitai-python SDK for image generation. Users can generate images based on specific models, schedulers, prompts, and other parameters. 
+This application leverages the power of Streamlit for the web interface and the Civitai Python SDK for image generation. Users can generate images based on specific models, schedulers, prompts, and other parameters. 
 
 ## Installation
 
