@@ -1,0 +1,4 @@
+libomp5
+libvulkan-dev
+libgl1
+libgl1-mesa-dev
