@@ -25,17 +25,22 @@ To run this project locally, follow these steps:
   pip install -r requirements.txt
   ```
 
-3. Run the Streamlit application:
+3. Grab your token from [your Civitai account](https://civitai.com/user/account)
+  ```bash
+  export CIVITAI_API_TOKEN=<your token>
+  ```
+
+4. Run the Streamlit application:
   ```bash
   streamlit run app.py
   ```
 
 ## Usage
 
-1. Grab your token from [your Civitai account](https://civitai.com/user/account) and paste the token.
-2. Select a model and scheduler.
-3. Enter your prompt/negative prompt and configure other settings.
-4. Click the "Generate" button to create your image.
+1. Select a model and scheduler.
+2. Enter your prompt/negative prompt and configure other settings.
+3. Click the "Show Input Data" button to show and create your input data.
+4. Check the input data, then click the "Generate" button to generate image. Or you can add additional networks first.
 5. View and download the generated image.
 
 ## Example
@@ -46,7 +51,7 @@ Below is an example configuration for generating an image:
 - **Scheduler:** EulerA
 - **Prompt:** masterpiece, best quality, looking at viewer, 1girl, solo, smile, sitting, shoulder cutout, braid, dress, cat ears, blonde hair, (closed eyes:1.1), twin braids, blush, long hair, bench, grin, grass, white dress, jewelry, clothing cutout, bangs, necklace, floral print, blurry, hand between legs, blurry background, between legs, bow, facing viewer, bare shoulders, day, collarbone, hair bow, short sleeves, feet out of frame, ribbon, red headwear, on bench, depth of field, park bench, ^_^, hair over shoulder, day, sky, flower field, petals
 - **Negative Prompt:** badhandv4, EasyNegative, verybadimagenegative_v1.3, (worst quality:2), (low quality:2), (normal quality:2)
-- **Steps:** 40
+- **Steps:** 30
 - **CFG Scale:** 7
 
 - **Width:** 512
