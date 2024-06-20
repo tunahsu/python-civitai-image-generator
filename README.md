@@ -6,7 +6,7 @@ This project is an image generation application built using Streamlit and the Ci
 
 ## Overview
 
-<img src="https://i.imgur.com/VTtjRvJ.png" width="70%" />
+<img src="https://i.imgur.com/RSuGWaN.png" width="70%" />
 
 This application leverages the power of Streamlit for the web interface and the Civitai Python SDK for image generation. Users can generate images based on specific models, schedulers, prompts, and other parameters. 
 
@@ -49,8 +49,9 @@ Below is an example configuration for generating an image:
 
 - **Model:** TMND-Mix
 - **Scheduler:** EulerA
-- **Prompt:** masterpiece, best quality, looking at viewer, 1girl, solo, smile, sitting, shoulder cutout, braid, dress, cat ears, blonde hair, (closed eyes:1.1), twin braids, blush, long hair, bench, grin, grass, white dress, jewelry, clothing cutout, bangs, necklace, floral print, blurry, hand between legs, blurry background, between legs, bow, facing viewer, bare shoulders, day, collarbone, hair bow, short sleeves, feet out of frame, ribbon, red headwear, on bench, depth of field, park bench, ^_^, hair over shoulder, day, sky, flower field, petals
-- **Negative Prompt:** badhandv4, EasyNegative, verybadimagenegative_v1.3, (worst quality:2), (low quality:2), (normal quality:2)
+- **Prompt:** ```masterpiece, best quality, looking at viewer,
+1girl, solo, (petite:1.2), 150cm, smile, sitting, shoulder cutout, braid, dress, cat ears, blonde hair, twin braids, blush, long hair, bench, grin, grass, white dress, jewelry, clothing cutout, bangs, necklace, floral print, blurry, hand between legs, blurry background, between legs, bow, facing viewer, bare shoulders, day, collarbone, hair bow, short sleeves, feet out of frame, ribbon, red headwear, on bench, depth of field, park bench, hair over shoulder, day, sky, flower field, petals```
+- **Negative Prompt:** ```badhandv4, EasyNegative, verybadimagenegative_v1.3, (worst quality:2), (low quality:2), (normal quality:2)```
 - **Steps:** 30
 - **CFG Scale:** 7
 
