@@ -39,7 +39,7 @@ To run this project locally, follow these steps:
 
 1. Select a model and scheduler.
 2. Enter your prompt/negative prompt and configure other settings.
-3. Click the "Show Input Data" button to show and create your input data.
+3. Click the "Show Input Data" button to create and show your input data.
 4. Check the input data, then click the "Generate" button to generate image. Or you can add additional networks first.
 5. View and download the generated image.
 

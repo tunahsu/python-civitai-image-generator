@@ -23,15 +23,22 @@ def show_input_data(placeholder, input_data):
 # Initialization
 st.set_page_config(layout='wide')
 st.title('Civitai Image Generator')
+
 model_list = {
-    'Default': 'urn:air:sd1:checkpoint:civitai:4384@128713',
-    'TMND-Mix': 'urn:air:sd1:checkpoint:civitai:27259@221220'
+    'Realistic-Mix': 'urn:air:sd1:checkpoint:civitai:4384@128713',
+    'TMND-Mix': 'urn:air:sd1:checkpoint:civitai:27259@221220',
+    'Other': ''
 }
 
 # Sidebar
 with st.sidebar:
     # Parameters for generated model
     model = st.selectbox('Model Selection', model_list.keys(), index=0)
+
+    if model == 'Other':
+        model_urn = st.text_input('Model (URN)')
+        model_list['Other'] = model_urn
+
     scheduler = st.selectbox('Scheduler',
                              ['EulerA', 'DPM2MKarras', 'DPMSDEKarras', 'Heun'],
                              index=0)
