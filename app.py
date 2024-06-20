@@ -61,7 +61,7 @@ with col2:
     st.header(':gray[Generated Image:]')
 
 if show:
-    if model != '' and prompt != '':
+    if model_list[model] != '' and prompt != '':
         if 'input_data' not in st.session_state:
             st.session_state['input_data'] = {}
 
