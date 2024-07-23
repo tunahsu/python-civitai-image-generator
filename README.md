@@ -25,23 +25,19 @@ To run this project locally, follow these steps:
   pip install -r requirements.txt
   ```
 
-3. Grab your token from [your Civitai account](https://civitai.com/user/account)
-  ```bash
-  export CIVITAI_API_TOKEN=<your token>
-  ```
-
-4. Run the Streamlit application:
+3. Run the Streamlit application:
   ```bash
   streamlit run app.py
   ```
 
 ## Usage
 
-1. Select a model and scheduler.
-2. Enter your prompt/negative prompt and configure other settings.
-3. Click the "Show Input Data" button to create and show your input data.
-4. Check the input data, then click the "Generate" button to generate image. Or you can add additional networks first.
-5. View and download the generated image.
+1. Grab your token from your [Civitai account](https://civitai.com/user/account)
+2. Select a model and scheduler.
+3. Enter your prompt/negative prompt and configure other settings.
+4. Click the "Show Input Data" button to create and show your input data.
+5. Check the input data, then click the "Generate" button to generate image. Or you can add additional networks first.
+6. View and download the generated image.
 
 ## Example
 
